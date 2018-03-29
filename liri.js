@@ -86,6 +86,8 @@ function movieThis() {
 
         // If the request is successful (i.e. if the response status code is 200)
         if (!error && response.statusCode === 200) {
+            console.log('')
+            console.log("OMDB Results :")
             console.log("Movie Title : " + JSON.parse(body).Title);
             console.log("Release Year : " + JSON.parse(body).Year);
             console.log("OMDB Rating : " + JSON.parse(body).imdbRating);
